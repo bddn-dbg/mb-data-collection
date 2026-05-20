@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worker Registration</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Worker Registration Form</h1>
+
+    <form action="/submit" method="POST">
+
+        <input type="text" name="name" placeholder="Name" required>
+
+        <input type="text" name="photo" placeholder="Photo URL" required>
+
+        <input type="text" name="aadhaar" placeholder="Aadhaar Number" required>
+
+        <input type="text" name="mobile" placeholder="Mobile Number" required>
+
+        <input type="text" name="city" placeholder="City" required>
+
+        <input type="text" name="category" placeholder="Category" required>
+
+        <input type="number" name="experience" placeholder="Experience" required>
+
+        <input type="text" name="skills" placeholder="Skills (comma separated)" required>
+
+        <textarea name="address" placeholder="Address"></textarea>
+
+        <textarea name="description" placeholder="Description"></textarea>
+
+        <input type="number" step="0.1" name="rating" placeholder="Rating">
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
